@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agency Web Content Management Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Agency Web Content Management Dashboard</h1>
+    <p>Mock dashboard showing website pages and SharePoint / Microsoft 365 documents for an Illinois-style agency.</p>
+  </header>
+
+  <main class="layout">
+    <!-- Summary cards -->
+    <section class="summary-grid" aria-label="Content overview">
+      <div class="card">
+        <h2>Total Pages</h2>
+        <p id="total-pages" class="metric">–</p>
+      </div>
+      <div class="card">
+        <h2>Pages with Issues</h2>
+        <p id="pages-with-issues" class="metric">–</p>
+      </div>
+      <div class="card">
+        <h2>Avg Accessibility Score</h2>
+        <p id="avg-accessibility" class="metric">–</p>
+      </div>
+      <div class="card">
+        <h2>Total Documents</h2>
+        <p id="total-docs" class="metric">–</p>
+      </div>
+      <div class="card">
+        <h2>Sensitive Documents</h2>
+        <p id="sensitive-docs" class="metric">–</p>
+      </div>
+    </section>
+
+    <!-- Pages section -->
+    <section aria-labelledby="pages-heading">
+      <header class="section-header">
+        <h2 id="pages-heading">Website Pages</h2>
+        <p>Filter and review public-facing pages for status, owner, and accessibility.</p>
+      </header>
+
+      <div class="filters" aria-label="Page filters">
+        <label>
+          Search
+          <input id="pageSearch" type="search" placeholder="Title or URL" />
+        </label>
+        <label>
+          Status
+          <select id="statusFilter">
+            <option value="">All</option>
+            <option value="Published">Published</option>
+            <option value="Draft">Draft</option>
+            <option value="Needs Review">Needs Review</option>
+          </select>
+        </label>
+        <label>
+          Minimum Accessibility
+          <select id="accessibilityFilter">
+            <option value="">Any</option>
+            <option value="80">80+</option>
+            <option value="90">90+</option>
+            <option value="95">95+</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="table-wrapper" tabindex="0">
+        <table id="pagesTable">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Owner</th>
+              <th>Status</th>
+              <th>Last Reviewed</th>
+              <th>Accessibility</th>
+              <th>Issues</th>
+              <th>Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Documents section -->
+    <section aria-labelledby="docs-heading">
+      <header class="section-header">
+        <h2 id="docs-heading">SharePoint / M365 Documents</h2>
+        <p>Mock view of documents stored in Microsoft 365 and SharePoint libraries.</p>
+      </header>
+
+      <div class="filters" aria-label="Document filters">
+        <label>
+          Library
+          <select id="libraryFilter">
+            <option value="">All</option>
+          </select>
+        </label>
+        <label>
+          Sensitivity
+          <select id="sensitivityFilter">
+            <option value="">All</option>
+            <option value="Public">Public</option>
+            <option value="Internal">Internal</option>
+            <option value="Restricted">Restricted</option>
+          </select>
+        </label>
+        <label>
+          Synced to Teams
+          <select id="teamsFilter">
+            <option value="">All</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="table-wrapper" tabindex="0">
+        <table id="docsTable">
+          <thead>
+            <tr>
+              <th>Document</th>
+              <th>Library</th>
+              <th>Owner</th>
+              <th>Last Modified</th>
+              <th>Sensitivity</th>
+              <th>Retention</th>
+              <th>Teams</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Demo project: Agency Web Content Management Dashboard – built with HTML, CSS, and vanilla JavaScript.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

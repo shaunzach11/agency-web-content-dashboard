@@ -1,0 +1,62 @@
+[
+  {
+    "id": 101,
+    "name": "FY25 Small Business Grant Guidelines.pdf",
+    "library": "Business Grants",
+    "owner": "Office of Entrepreneurship",
+    "lastModified": "2025-11-15",
+    "sensitivity": "Public",
+    "retentionLabel": "5 Years",
+    "syncedToTeams": true
+  },
+  {
+    "id": 102,
+    "name": "Tourism Marketing Plan 2025.pptx",
+    "library": "Tourism Initiatives",
+    "owner": "Tourism Office",
+    "lastModified": "2025-11-02",
+    "sensitivity": "Internal",
+    "retentionLabel": "3 Years",
+    "syncedToTeams": true
+  },
+  {
+    "id": 103,
+    "name": "Workforce Partners Contact List.xlsx",
+    "library": "Workforce Programs",
+    "owner": "Workforce Development",
+    "lastModified": "2025-10-21",
+    "sensitivity": "Restricted",
+    "retentionLabel": "Indefinite",
+    "syncedToTeams": false
+  },
+  {
+    "id": 104,
+    "name": "CDBG Program Overview.docx",
+    "library": "Community Grants",
+    "owner": "Community Development",
+    "lastModified": "2025-08-30",
+    "sensitivity": "Public",
+    "retentionLabel": "Permanent",
+    "syncedToTeams": true
+  },
+  {
+    "id": 105,
+    "name": "Agency Open Data Governance Policy.docx",
+    "library": "Data Governance",
+    "owner": "Data & Analytics",
+    "lastModified": "2025-09-14",
+    "sensitivity": "Internal",
+    "retentionLabel": "7 Years",
+    "syncedToTeams": true
+  },
+  {
+    "id": 106,
+    "name": "International Trade Mission Briefing.pdf",
+    "library": "International Affairs",
+    "owner": "International Affairs",
+    "lastModified": "2025-07-19",
+    "sensitivity": "Restricted",
+    "retentionLabel": "10 Years",
+    "syncedToTeams": false
+  }
+]
