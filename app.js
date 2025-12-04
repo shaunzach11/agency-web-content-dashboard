@@ -1,8 +1,8 @@
 async function initDashboard() {
   try {
     const [pagesRes, docsRes] = await Promise.all([
-      fetch("data/pages.json"),
-      fetch("data/documents.json")
+      fetch("pages.json"),
+      fetch("documents.json")
     ]);
 
     const pages = await pagesRes.json();
